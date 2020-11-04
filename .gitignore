@@ -1,0 +1,25 @@
+# Project exclude paths
+/gamll-parent/common/common-util/target/
+/gamll-parent/common/rabbit-util/target/
+/gamll-parent/common/service-util/target/
+/gamll-parent/common/web-util/target/
+/gamll-parent/model/target/
+/gamll-parent/server-gateway/target/
+/gamll-parent/service/service-activity/target/
+/gamll-parent/service/service-cart/target/
+/gamll-parent/service/service-item/target/
+/gamll-parent/service/service-list/target/
+/gamll-parent/service/service-mq/target/
+/gamll-parent/service/service-order/target/
+/gamll-parent/service/service-payment/target/
+/gamll-parent/service/service-product/target/
+/gamll-parent/service/service-task/target/
+/gamll-parent/service/service-user/target/
+/gamll-parent/service-client/service-activity-client/target/
+/gamll-parent/service-client/service-cart-client/target/
+/gamll-parent/service-client/service-item-client/target/
+/gamll-parent/service-client/service-list-client/target/
+/gamll-parent/service-client/service-order-client/target/
+/gamll-parent/service-client/service-product-client/target/
+/gamll-parent/service-client/service-user-client/target/
+/gamll-parent/web/web-all/target/

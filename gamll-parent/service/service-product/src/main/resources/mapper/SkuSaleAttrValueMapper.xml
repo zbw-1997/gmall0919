@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper SYSTEM "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.atguigu.gmall.product.mapper.SkuSaleAttrValueMapper">
+    <resultMap id="SkuSaleAttrValueMap" type="java.util.Map" autoMapping="true">
+
+    </resultMap>
+    <select id="getSkuValueIdsMap" resultMap="SkuSaleAttrValueMap">
+        select ssav1.sku_id,GROUP_CONCAT(sale_attr_value_id  ORDER BY ssav2.base_sale_attr_id ASC SEPARATOR '|') value_ids
+        from sku_sale_attr_value ssav1
+        inner join spu_sale_attr_value ssav2
+        on ssav1.sale_attr_value_id=ssav2.id
+        where ssav1.spu_id=#{spuId}
+        group by ssav1.sku_id;
+    </select>
+</mapper>
